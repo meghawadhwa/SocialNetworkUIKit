@@ -42,7 +42,7 @@ Install dependencies: Ensure you have CocoaPods installed. Then run:
 - **Minimum iOS Version:** iOS 14
 - **Alamofire:** 5.9.1
 - **Realm:** 10.53.0
-- **COCOAPODS:** 1.15.2
+- **Cocoapods:** 1.15.2
 
 ## Screenshots 
 
