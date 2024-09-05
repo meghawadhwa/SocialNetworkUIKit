@@ -47,8 +47,10 @@ Install dependencies: Ensure you have CocoaPods installed. Then run:
 ## Screenshots 
 
   ## Login Screen
- <img src = "https://github.com/user-attachments/assets/18b21d8b-bfee-447a-816a-9c80038ce3f5" alt="App Screenshot" width="250">
-- <img src = "https://github.com/user-attachments/assets/e6a5d5f9-9b56-4fa8-aab4-bff9794b1286" alt="App Screenshot" width="250">
+ <img src = "https://github.com/user-attachments/assets/ee4ac3f0-a547-40e6-9e32-fbe96bea331f" alt="App Screenshot" width="250">
+- <img src = "https://github.com/user-attachments/assets/e173d6bc-ade8-4ed1-94df-771d1566c4ab" alt="App Screenshot" width="250">![Simulator Screenshot - Clone 1 of iPhone 15 - 2024-09-05 at 19 39 37](https://github.com/user-attachments/assets/1d0e2cb6-50d4-4987-b34a-677a721368cf)
+![Simulator Screenshot - Clone 1 of iPhone 15 - 2024-09-05 at 19 39 31]()
+
 
   ## Posts Screen
 - <img src = "https://github.com/user-attachments/assets/af242b53-25c8-4ce7-b784-59208b398672" alt="App Screenshot" width="250">
@@ -56,7 +58,8 @@ Install dependencies: Ensure you have CocoaPods installed. Then run:
 
   ## Favorites Screen
 
-- <img src = "https://github.com/user-attachments/assets/475344f4-1625-46b9-b508-97716602a342" alt="App Screenshot" width="250">
+- <img src = "https://github.com/user-attachments/assets/1d0e2cb6-50d4-4987-b34a-677a721368cf" alt="App Screenshot" width="250">
+- <img src = "https://github.com/user-attachments/assets/1678f004-a850-48b7-b54e-e35d3ecc74f2" alt="App Screenshot" width="250">
 
 ## Code Explanation
 Post Model
@@ -84,15 +87,38 @@ Comment Model
 
 PostsViewModel
 
-      class PostsViewModel: ObservableObject {
-          @Published var posts: [Post] = []
-          @Published var favoritePosts: [Post] = []
-      
-          private let networkManager: NetworkManager
+     // MARK: - PostsViewModel
+/// ViewModel for managing posts and their favorite status.
+      class PostsViewModel: PostsViewModelProtocol {
+              
+          /// Observable array of all posts.
+          var postsObservable: Observable<[Post]> {
+              postsSubject.asObservable()
+          }
+          
+          /// Observable array of favorite posts.
+          var favoritePostsObservable: Observable<[Post]> {
+              favoritePostsSubject.asObservable()
+          }
+          
+          /// Private subject to hold the current posts.
+          private let postsSubject = BehaviorSubject<[Post]>(value: [])
+          
+          /// Private subject to hold the current favorite posts.
+          private let favoritePostsSubject = BehaviorSubject<[Post]>(value: [])
+          
+          private let networkManager: NetworkManagerProtocol
           private let realm: Realm
           private let disposeBag: DisposeBag
-      
-          init(networkManager: NetworkManager = NetworkManager.shared,
+          
+          // MARK: - Initialization
+          
+          /// Initializes the ViewModel with necessary dependencies.
+          /// - Parameters:
+          ///   - networkManager: The network manager used for fetching posts.
+          ///   - disposeBag: DisposeBag for managing RxSwift subscriptions.
+          ///   - realm: Realm database instance.
+          init(networkManager: NetworkManagerProtocol = NetworkManager.shared,
                disposeBag: DisposeBag = DisposeBag(),
                realm: Realm = try! Realm()) {
               self.realm = realm
@@ -100,7 +126,6 @@ PostsViewModel
               self.disposeBag = disposeBag
               fetchLocalPosts()
           }
-      }
 
 PostsViewModel: Manages the fetching, storing, and updating of posts and their comments. Uses Realm for local data storage and RxSwift for managing asynchronous events.
 
