@@ -45,10 +45,14 @@ class PostCell: UITableViewCell {
     /// - Parameters:
     ///   - post: The `Post` object to display.
     ///   - imageName: imageName indicating if the post is a favorite.
-    func configure(with post: Post, imageName: String) {
+    func configure(with post: Post, imageName: String?) {
         setupUI()
         titleLabel.text = post.title
         bodyLabel.text = post.body
+        guard let imageName else {
+            imageIcon.isHidden = true
+            return
+        }
         imageIcon.setImage(UIImage(systemName: imageName), for: .normal)
     }
 }

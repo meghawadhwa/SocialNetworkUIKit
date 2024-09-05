@@ -16,6 +16,7 @@ pod 'RealmSwift', '~> 10.0'
     # Pods for testing
     pod 'RxSwift'
     pod 'RxCocoa'
+    pod 'RxTest'
   end
 
   target 'SocialNetworkUIKitUITests' do

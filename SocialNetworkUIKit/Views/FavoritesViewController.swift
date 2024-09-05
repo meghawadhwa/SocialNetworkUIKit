@@ -13,6 +13,8 @@ import RxCocoa
 class FavoritesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var placeholderLabel: UILabel!
+    
     private var viewModel: PostsViewModelProtocol!
     private let disposeBag = DisposeBag()
     private var isCommentsViewPresented = false
@@ -50,17 +52,15 @@ class FavoritesViewController: UIViewController {
             .subscribe(onNext: { [weak self] posts in
                 self?.favouritePosts = posts
                 self?.tableView.reloadData()
+                self?.updatePlaceholderVisibility()
             })
             .disposed(by: disposeBag)
     }
     
-    // MARK: - Navigation
-    
-    private func presentCommentsViewController(for post: Post) {
-        commentsViewModel.post = post
-        //TODO: complete showing let commentsVC = CommentsViewController()
-        //commentsVC.configure(with: commentsViewModel)
-        //present(commentsVC, animated: true, completion: nil)
+// Show/hide the placeholder label based on the number of favorite posts
+    private func updatePlaceholderVisibility() {
+        placeholderLabel.isHidden = !favouritePosts.isEmpty
+        tableView.isHidden = favouritePosts.isEmpty
     }
 }
 
@@ -75,13 +75,8 @@ extension FavoritesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostCell
         let post = favouritePosts[indexPath.row]
-        cell.configure(with: post, imageName: "bubble")
+        cell.configure(with: post, imageName: nil)
         cell.selectionStyle = .none
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let post = favouritePosts[indexPath.row]
-        presentCommentsViewController(for: post)
     }
 }

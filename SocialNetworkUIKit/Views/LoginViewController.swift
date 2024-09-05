@@ -35,15 +35,16 @@ class LoginViewController: UIViewController {
     // MARK: - Setup UI
     private func setupUI() {
         self.title = "Login"
-        emailTextField.placeholder = "Email"
-        passwordTextField.placeholder = "Password"
-        emailTextField.borderStyle = .roundedRect
-        passwordTextField.borderStyle = .roundedRect
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "Enter your email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Enter your password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+        emailTextField.borderStyle = .bezel
+        passwordTextField.borderStyle = .bezel
         passwordTextField.isSecureTextEntry = true
         loginButton.layer.cornerRadius = 8
         loginButton.isEnabled = false
         loginButton.backgroundColor = .gray
         loginButton.setTitleColor(.white, for: .normal)
+        loginButton.setTitleColor(.white, for: .disabled)
     }
     
     // MARK: - Setup Bindings

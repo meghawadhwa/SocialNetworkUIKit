@@ -16,7 +16,7 @@
 		E67AD97F2C89710A00EC9B45 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E67AD97E2C89710A00EC9B45 /* Base */; };
 		E67AD9812C89710E00EC9B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67AD9802C89710E00EC9B45 /* Assets.xcassets */; };
 		E67AD9842C89710E00EC9B45 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E67AD9832C89710E00EC9B45 /* Base */; };
-		E67AD98F2C89710E00EC9B45 /* SocialNetworkUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD98E2C89710E00EC9B45 /* SocialNetworkUIKitTests.swift */; };
+		E67AD98F2C89710E00EC9B45 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD98E2C89710E00EC9B45 /* LoginViewModelTests.swift */; };
 		E67AD9992C89710E00EC9B45 /* SocialNetworkUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD9982C89710E00EC9B45 /* SocialNetworkUIKitUITests.swift */; };
 		E67AD99B2C89710E00EC9B45 /* SocialNetworkUIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD99A2C89710E00EC9B45 /* SocialNetworkUIKitUITestsLaunchTests.swift */; };
 		E67AD9A92C8973F800EC9B45 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD9A72C8973F800EC9B45 /* Constants.swift */; };
@@ -36,6 +36,8 @@
 		E67AD9CB2C89AFED00EC9B45 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E67AD9CA2C89AFED00EC9B45 /* PostCell.xib */; };
 		E67AD9CD2C89BD0F00EC9B45 /* FavoritesViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD9CC2C89BD0F00EC9B45 /* FavoritesViewModelProtocol.swift */; };
 		E67AD9CF2C89BD6800EC9B45 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD9CE2C89BD6800EC9B45 /* CommentsViewController.swift */; };
+		E67AD9D12C89DABD00EC9B45 /* PostsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD9D02C89DABD00EC9B45 /* PostsViewModelTests.swift */; };
+		E67AD9D42C89DAFE00EC9B45 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD9D32C89DAFE00EC9B45 /* MockNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +75,7 @@
 		E67AD9832C89710E00EC9B45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E67AD9852C89710E00EC9B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E67AD98A2C89710E00EC9B45 /* SocialNetworkUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialNetworkUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E67AD98E2C89710E00EC9B45 /* SocialNetworkUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkUIKitTests.swift; sourceTree = "<group>"; };
+		E67AD98E2C89710E00EC9B45 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		E67AD9942C89710E00EC9B45 /* SocialNetworkUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialNetworkUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67AD9982C89710E00EC9B45 /* SocialNetworkUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkUIKitUITests.swift; sourceTree = "<group>"; };
 		E67AD99A2C89710E00EC9B45 /* SocialNetworkUIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkUIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -94,6 +96,8 @@
 		E67AD9CA2C89AFED00EC9B45 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		E67AD9CC2C89BD0F00EC9B45 /* FavoritesViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModelProtocol.swift; sourceTree = "<group>"; };
 		E67AD9CE2C89BD6800EC9B45 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		E67AD9D02C89DABD00EC9B45 /* PostsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModelTests.swift; sourceTree = "<group>"; };
+		E67AD9D32C89DAFE00EC9B45 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 		EFC6ED71931F723E580964F6 /* Pods-SocialNetworkUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetworkUIKit.debug.xcconfig"; path = "Target Support Files/Pods-SocialNetworkUIKit/Pods-SocialNetworkUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,7 +186,9 @@
 		E67AD98D2C89710E00EC9B45 /* SocialNetworkUIKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				E67AD98E2C89710E00EC9B45 /* SocialNetworkUIKitTests.swift */,
+				E67AD9D22C89DAE800EC9B45 /* Mocks */,
+				E67AD98E2C89710E00EC9B45 /* LoginViewModelTests.swift */,
+				E67AD9D02C89DABD00EC9B45 /* PostsViewModelTests.swift */,
 			);
 			path = SocialNetworkUIKitTests;
 			sourceTree = "<group>";
@@ -262,6 +268,14 @@
 				E67AD9C82C89A7F100EC9B45 /* NetworkManagerProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E67AD9D22C89DAE800EC9B45 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E67AD9D32C89DAFE00EC9B45 /* MockNetworkManager.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		F0A14220FA88839F1CC7051E /* Frameworks */ = {
@@ -558,7 +572,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E67AD98F2C89710E00EC9B45 /* SocialNetworkUIKitTests.swift in Sources */,
+				E67AD9D42C89DAFE00EC9B45 /* MockNetworkManager.swift in Sources */,
+				E67AD9D12C89DABD00EC9B45 /* PostsViewModelTests.swift in Sources */,
+				E67AD98F2C89710E00EC9B45 /* LoginViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,6 +809,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -813,6 +830,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -832,6 +850,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Nagarro.SocialNetworkUIKitUITests;
@@ -850,6 +869,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Nagarro.SocialNetworkUIKitUITests;

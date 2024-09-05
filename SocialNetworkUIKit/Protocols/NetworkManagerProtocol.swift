@@ -11,5 +11,4 @@ import RxSwift
 /// Protocol defining the behavior for network interactions.
 protocol NetworkManagerProtocol {
     func fetchPosts() -> Observable<[Post]>
-    func fetchComments(for postId: Int) -> Observable<[Comment]> 
 }

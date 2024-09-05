@@ -48,6 +48,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;No Favorites Yet! Tap on the Post to make favorites right now!&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUz-KG-QnK">
+                                <rect key="frame" x="8" y="404.66666666666669" width="377" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MBM-oO-W4H">
                                 <rect key="frame" x="0.0" y="75" width="393" height="727"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -56,14 +62,18 @@
                         <viewLayoutGuide key="safeArea" id="kJM-SX-6g2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="PUz-KG-QnK" firstAttribute="centerY" secondItem="M1S-Yl-p6t" secondAttribute="centerY" id="Aow-1T-BBh"/>
                             <constraint firstItem="kJM-SX-6g2" firstAttribute="trailing" secondItem="MBM-oO-W4H" secondAttribute="trailing" id="DYj-dW-PLK"/>
                             <constraint firstItem="kJM-SX-6g2" firstAttribute="bottom" secondItem="MBM-oO-W4H" secondAttribute="bottom" constant="16" id="Kj3-an-s6F"/>
+                            <constraint firstItem="PUz-KG-QnK" firstAttribute="centerX" secondItem="M1S-Yl-p6t" secondAttribute="centerX" id="V8m-vq-vQo"/>
                             <constraint firstItem="MBM-oO-W4H" firstAttribute="leading" secondItem="kJM-SX-6g2" secondAttribute="leading" id="eFL-AS-omY"/>
+                            <constraint firstItem="PUz-KG-QnK" firstAttribute="leading" secondItem="kJM-SX-6g2" secondAttribute="leading" constant="8" id="fGr-vb-BZo"/>
                             <constraint firstItem="MBM-oO-W4H" firstAttribute="top" secondItem="kJM-SX-6g2" secondAttribute="top" constant="16" id="xkO-Uh-fte"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="GXt-jM-Vll"/>
                     <connections>
+                        <outlet property="placeholderLabel" destination="PUz-KG-QnK" id="OcY-1R-ig2"/>
                         <outlet property="tableView" destination="MBM-oO-W4H" id="xfP-eG-q4i"/>
                     </connections>
                 </viewController>
@@ -98,7 +108,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="YNx-kD-xoD">
-                                <rect key="frame" x="34" y="99" width="325" height="178.33333333333337"/>
+                                <rect key="frame" x="34" y="99.000000000000014" width="325" height="178.33333333333337"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R15-P7-6pA">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="34"/>
