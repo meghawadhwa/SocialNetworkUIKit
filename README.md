@@ -47,20 +47,16 @@ Install dependencies: Ensure you have CocoaPods installed. Then run:
 ## Screenshots 
 
   ## Login Screen
- <img src = "https://github.com/user-attachments/assets/82387253-7a29-48b6-b2dd-65d4281d5e23" alt="App Screenshot" width="250">
-- <img src = "https://github.com/user-attachments/assets/2ac06f72-468e-4d77-83c4-f881786ca90c" alt="App Screenshot" width="250">
-
+ <img src = "https://github.com/user-attachments/assets/18b21d8b-bfee-447a-816a-9c80038ce3f5" alt="App Screenshot" width="250">
+- <img src = "https://github.com/user-attachments/assets/e6a5d5f9-9b56-4fa8-aab4-bff9794b1286" alt="App Screenshot" width="250">
 
   ## Posts Screen
-- <img src = "https://github.com/user-attachments/assets/e3577cd9-91b8-4041-8e76-8c7d1bff6782" alt="App Screenshot" width="250">
+- <img src = "https://github.com/user-attachments/assets/af242b53-25c8-4ce7-b784-59208b398672" alt="App Screenshot" width="250">
+- <img src = "https://github.com/user-attachments/assets/865bc860-c90c-41e3-ba77-6ce5f7f5910c" alt="App Screenshot" width="250">
 
   ## Favorites Screen
 
-- <img src = "https://github.com/user-attachments/assets/765707cb-1d70-4e92-b119-b9215de5a6dd" alt="App Screenshot" width="250">
-- <img src = "https://github.com/user-attachments/assets/9b8d41ee-0b15-4a01-bf1d-3ebebbd82619" alt="App Screenshot" width="250">
-
-  ## Comments Screen
-- <img src = "https://github.com/user-attachments/assets/e89e2eb0-3bd0-4227-afd3-ba23128451fe" alt="App Screenshot" width="250">
+- <img src = "https://github.com/user-attachments/assets/475344f4-1625-46b9-b508-97716602a342" alt="App Screenshot" width="250">
 
 ## Code Explanation
 Post Model
