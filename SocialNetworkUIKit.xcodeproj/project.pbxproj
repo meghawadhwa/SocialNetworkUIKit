@@ -30,7 +30,7 @@
 		E67AD9BD2C89752800EC9B45 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD9BC2C89752800EC9B45 /* PostsViewController.swift */; };
 		E67AD9BF2C8975BC00EC9B45 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD9BE2C8975BC00EC9B45 /* FavoritesViewController.swift */; };
 		E67AD9C22C899C5C00EC9B45 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD9C12C899C5C00EC9B45 /* PostCell.swift */; };
-		E67AD9C52C89A6D000EC9B45 /* PostsViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD9C42C89A6D000EC9B45 /* PostsViewControllerProtocol.swift */; };
+		E67AD9C52C89A6D000EC9B45 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD9C42C89A6D000EC9B45 /* ViewControllerProtocol.swift */; };
 		E67AD9C72C89A72D00EC9B45 /* PostsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD9C62C89A72C00EC9B45 /* PostsViewModelProtocol.swift */; };
 		E67AD9C92C89A7F100EC9B45 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AD9C82C89A7F100EC9B45 /* NetworkManagerProtocol.swift */; };
 		E67AD9CB2C89AFED00EC9B45 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E67AD9CA2C89AFED00EC9B45 /* PostCell.xib */; };
@@ -90,7 +90,7 @@
 		E67AD9BC2C89752800EC9B45 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		E67AD9BE2C8975BC00EC9B45 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		E67AD9C12C899C5C00EC9B45 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
-		E67AD9C42C89A6D000EC9B45 /* PostsViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewControllerProtocol.swift; sourceTree = "<group>"; };
+		E67AD9C42C89A6D000EC9B45 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
 		E67AD9C62C89A72C00EC9B45 /* PostsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModelProtocol.swift; sourceTree = "<group>"; };
 		E67AD9C82C89A7F100EC9B45 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
 		E67AD9CA2C89AFED00EC9B45 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
@@ -262,7 +262,7 @@
 		E67AD9C32C89A6BC00EC9B45 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E67AD9C42C89A6D000EC9B45 /* PostsViewControllerProtocol.swift */,
+				E67AD9C42C89A6D000EC9B45 /* ViewControllerProtocol.swift */,
 				E67AD9CC2C89BD0F00EC9B45 /* FavoritesViewModelProtocol.swift */,
 				E67AD9C62C89A72C00EC9B45 /* PostsViewModelProtocol.swift */,
 				E67AD9C82C89A7F100EC9B45 /* NetworkManagerProtocol.swift */,
@@ -550,7 +550,7 @@
 				E67AD9CD2C89BD0F00EC9B45 /* FavoritesViewModelProtocol.swift in Sources */,
 				E67AD97C2C89710A00EC9B45 /* HomeViewController.swift in Sources */,
 				E67AD9B02C89741B00EC9B45 /* Comment.swift in Sources */,
-				E67AD9C52C89A6D000EC9B45 /* PostsViewControllerProtocol.swift in Sources */,
+				E67AD9C52C89A6D000EC9B45 /* ViewControllerProtocol.swift in Sources */,
 				E67AD9782C89710A00EC9B45 /* AppDelegate.swift in Sources */,
 				E67AD9BF2C8975BC00EC9B45 /* FavoritesViewController.swift in Sources */,
 				E67AD9CF2C89BD6800EC9B45 /* CommentsViewController.swift in Sources */,

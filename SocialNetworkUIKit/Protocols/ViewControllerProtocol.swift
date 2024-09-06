@@ -9,10 +9,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-// MARK: - PostsViewControllerProtocol
 /// Protocol defining the behavior of the ViewController. of SocialNetworkUIKit
-protocol PostsViewControllerProtocol: AnyObject {
-    func displayPosts(_ posts: [Post])
-    func displayError(_ error: Error)
-    func updateCell(for post: Post)
+protocol ViewControllerProtocol: AnyObject {
+    func setupBindings()
+    func configure(with viewModel: PostsViewModelProtocol)
 }
