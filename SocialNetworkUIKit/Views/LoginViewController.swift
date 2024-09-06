@@ -26,12 +26,7 @@ class LoginViewController: UIViewController {
         setupUI()
         setupBindings()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        /// Disable swipe-to-dismiss
-        self.isModalInPresentation = true
-    }
+
     // MARK: - Setup UI
     private func setupUI() {
         self.title = "Login"
@@ -71,8 +66,21 @@ class LoginViewController: UIViewController {
         // Handle login button tap
         loginButton.rx.tap
             .subscribe(onNext: { [weak self] in
-                self?.dismiss(animated: true, completion: nil)
+                //self?.dismiss(animated: true, completion: nil)
+                self?.showTabBarController()
+
             })
             .disposed(by: disposeBag)
     }
+    
+    private func showTabBarController() {
+         let homeViewController = storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+         
+        // Animate the transition with cross-dissolve
+        if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate, let window = sceneDelegate.window {
+            UIView.transition(with: window, duration: 0.5, options: .transitionFlipFromLeft, animations: {
+                window.rootViewController = homeViewController
+            }, completion: nil)
+        }
+     }
 }
