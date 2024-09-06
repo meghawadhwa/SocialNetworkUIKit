@@ -66,9 +66,7 @@ class LoginViewController: UIViewController {
         // Handle login button tap
         loginButton.rx.tap
             .subscribe(onNext: { [weak self] in
-                //self?.dismiss(animated: true, completion: nil)
                 self?.showTabBarController()
-
             })
             .disposed(by: disposeBag)
     }
